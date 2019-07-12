@@ -23,13 +23,14 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Routes from './src/routes';
 
 const App = () => {
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
+        {/* <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
@@ -66,7 +67,8 @@ const App = () => {
             </View>
             <LearnMoreLinks />
           </View>
-        </ScrollView>
+        </ScrollView> */}
+        <Routes/>
       </SafeAreaView>
     </Fragment>
   );
